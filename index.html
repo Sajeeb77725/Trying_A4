@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My calculator</title>
+    <!-- Bootstarp Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Extarnel css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center mb-4">
+        My <span class="text-primary">Money Calculator</span>
+      </h1>
+    </header>
+    <section class="container-sm">
+      <div class="row gx-5">
+        <div class="col img-fluid">
+          <img src="image/14311.jpg" alt="" width="705" height="700" />
+        </div>
+        <div class="col calculate">
+          <h5 class="text-center calc-h5">Income</h5>
+          <div class="input">
+            <span class=""
+              >Income: <input id="income-input" class="input-box" type="text"
+            /></span>
+          </div>
+          <h5 class="text-center mt-4">Expenses</h5>
+          <div class="input">
+            <span class=""
+              >Food: <input id="food-input" class="input-box" type="text"
+            /></span>
+          </div>
+          <div class="input" id="rent">
+            <span class=""
+              >Rent: <input id="rent-input" class="input-box" type="text"
+            /></span>
+          </div>
+          <div class="input" id="clothes">
+            <span class=""
+              >Clothes: <input id="clothes-input" class="input-box" type="text"
+            /></span>
+          </div>
+          <button id="calculate-btn" class="input button">Calculate</button>
+          <h5 class="text-center mt-4">
+            Total Expenses: <span id="expense-text">000</span>
+          </h5>
+          <h5 class="text-center mt-4">
+            Balance: <span id="balance-text">000</span>
+          </h5>
+          <div id="save-id">
+            <span class=""
+              >Save:
+              <input
+                id="save-input"
+                class="input-box saving-input"
+                type="text"
+              />
+              <span class="mx-2">%</span>
+              <button id="save-button">Save</button></span
+            >
+          </div>
+          <h5 class="text-center mt-4">
+            Saving Amount: <span id="saving-amount">000</span>
+          </h5>
+          <h5 class="text-center mt-4">
+            Remaining Balance: <span id="remaining-balance">000</span>
+          </h5>
+        </div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
